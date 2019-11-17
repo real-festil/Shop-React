@@ -1,0 +1,23 @@
+.ProductsWrapper {
+    display: grid;
+    grid-template:
+        'product product' 1fr;
+    grid-row-gap: 15px;
+    justify-items: center;
+}
+
+@media screen and (min-width:1024px) {
+    .ProductsWrapper {
+        grid-template-areas:
+            'product product product';
+        grid-row-gap: 25px;
+    }
+}
+
+@media screen and (min-width:1920px) {
+    .ProductsWrapper {
+        grid-template-areas:
+            'product product product product';
+        grid-row-gap: 35px;
+    }
+}

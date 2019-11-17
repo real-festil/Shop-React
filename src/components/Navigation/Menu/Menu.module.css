@@ -1,0 +1,78 @@
+.Wrapper {
+    height: 70px;
+    width: 100px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Sandwich {
+    z-index: 1000;
+    transition: all 0.3s ease-out;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.Sandwich div {
+    z-index: 2000;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.Menu {
+    transition: all 0.3s ease-out;
+    width: 150px;
+    height: 100%;
+    background:#cbf1f5;
+    color: black;
+    z-index: 900;
+}
+
+.Menu ul {
+    list-style: none;
+    line-height: 4;
+    font-size: 18px;
+    padding-inline-start: 0;
+    text-align: center;
+}
+
+.Menu li{
+    margin: 0;
+    width: 100%;
+    border-bottom: 1px solid #71c9ce;
+    transition: all 0.3s ease-out;
+}
+
+.Menu li:hover {
+    cursor: pointer;
+    width:150px;
+}
+
+@media screen and (min-width:512px) {
+    .Sandwich {
+        top: 15px;
+        left: 10px;
+    }
+
+    .Sandwich div {
+        width: 55px;
+        height: 6px;
+        margin: 8px 0;
+    }
+
+    .Menu {
+        width: 200px;
+    }
+}
+
+@media screen and (min-width:512px) {
+    .Menu {
+        width: 350px;
+    }
+
+    .Menu ul {
+        font-size: 24px;
+    }
+}

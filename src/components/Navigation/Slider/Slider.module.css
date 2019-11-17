@@ -1,0 +1,80 @@
+.slideContainer {
+    width: 100%;
+    margin-top: -6px;
+    z-index: -2;
+}
+
+  h3 {
+    text-align: center;
+}
+
+  .eachSlide div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+  }
+
+  .eachSlide span {
+    padding: 20px;
+    font-size: 20px;
+    background: #efefef;
+    text-align: center;
+  }
+
+  .eachFade {
+    display: flex;
+  }
+
+  .eachFade .image-container {
+    width: 75%;
+    overflow: hidden;
+  }
+
+  .eachFade .image-container img {
+    width: 100%;
+  }
+
+  .eachFade h2 {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: #adceed;
+  }
+
+  @media screen and (min-width:512px) {
+    .slideContainer {
+      margin-top: 22px;
+    }
+
+    .eachSlide div {
+      background-size: cover;
+    }
+}
+
+  @media screen and (min-width:1024px) {
+      .slideContainer {
+        margin-top: 24px;
+      }
+
+      .eachSlide div {
+        height: 400px;
+        background-size: cover;
+      }
+  }
+
+  @media screen and (min-width:1920px) {
+    .slideContainer {
+      margin-top: 24px;
+    }
+
+    .eachSlide div {
+      height: 430px;
+      background-size: cover;
+    }
+}
